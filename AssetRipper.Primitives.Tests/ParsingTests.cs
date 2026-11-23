@@ -17,6 +17,7 @@ public class ParsingTests
 	[TestCase("0.0.0", 0, 0, 0, UnityVersionType.Alpha, 0, null, "Zero, Major Minor Build Only")]
 	[TestCase("0.0.0b2", 0, 0, 0, UnityVersionType.Beta, 2, null, "Zero, Full")]
 	[TestCase("2019.2.2f1-letters", 2019, 2, 2, UnityVersionType.Final, 1, "-letters", "Issue #40 - Appended Custom Characters")]
+	[TestCase("2022.3.62t1b3", 2022, 3, 62, UnityVersionType.Tuanjie, 1, "b3", "Tuanjie Version, Full")]
 	public void UnityVersionParsesCorrectly(string versionString, int major, int minor, int build, UnityVersionType type, int typeNumber, string? customEngine, string name)
 	{
 		UnityVersion expected = new UnityVersion((ushort)major, (ushort)minor, (ushort)build, type, (byte)typeNumber);

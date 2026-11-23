@@ -21,6 +21,7 @@ public static class CharacterExtensions
 			'f' => UnityVersionType.Final,
 			'p' => UnityVersionType.Patch,
 			'x' => UnityVersionType.Experimental,
+			't' => UnityVersionType.Tuanjie,
 			_ => throw new ArgumentException($"There is no version type {c}", nameof(c)),
 		};
 	}

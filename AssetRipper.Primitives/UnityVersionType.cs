@@ -29,6 +29,10 @@ public enum UnityVersionType : byte
 	/// x
 	/// </summary>
 	Experimental,
+	/// <summary>
+	/// t
+	/// </summary>
+	Tuanjie,
 
 	/// <summary>
 	/// The minimum valid value for this enumeration
@@ -37,7 +41,7 @@ public enum UnityVersionType : byte
 	/// <summary>
 	/// The maximum valid value for this enumeration
 	/// </summary>
-	MaxValue = Experimental,
+	MaxValue = Tuanjie,
 }
 
 /// <summary>
@@ -61,6 +65,7 @@ public static class UnityVersionTypeExtentions
 			UnityVersionType.Final => 'f',
 			UnityVersionType.Patch => 'p',
 			UnityVersionType.Experimental => 'x',
+			UnityVersionType.Tuanjie => 't',
 			_ => 'u',//unknown
 		};
 	}

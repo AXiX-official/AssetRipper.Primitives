@@ -21,7 +21,7 @@ internal static partial class UnityVersionRegexes
 	private const string MajorMinorBuild = @"^([0-9]+)\.([0-9]+)\.([0-9]+)$";
 
 	[StringSyntax("regex")]
-	private const string Normal = @"^([0-9]+)\.([0-9]+)\.([0-9]+)\.?([abcfpx])([0-9]+)((?:.|[\r\n])+)?$";
+	private const string Normal = @"^([0-9]+)\.([0-9]+)\.([0-9]+)\.?([abcfpxt])([0-9]+)((?:.|[\r\n])+)?$";
 
 	[StringSyntax("regex")]
 	private const string China = @"^([0-9]+)\.([0-9]+)\.([0-9]+)\.?f1c([0-9]+)((?:.|[\r\n])+)?$";
